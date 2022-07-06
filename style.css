@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 237, 237);
+    font-family: sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 black;
+}
+
+.container .up{
+    background-color: white;
+    width: 100%;
+    padding: 30px 150px 30px 30px;
+}
+
+.container .up h2{
+    color: rgb(25, 76, 171);
+    margin-bottom: 15px;
+}
+
+.container .up h3{
+    color: rgb(57, 208, 57);
+    margin-bottom: 15px;
+}
+
+.container .up p{
+    line-height: 25px;
+    color: rgb(126, 124, 124);
+}
+
+.container .left{
+    background-color: rgb(8, 103, 121);
+    width: 50%;
+    padding: 30px;
+    color: white;
+}
+
+.container .left h3{
+    margin-bottom: 15px;
+}
+
+.container .left h1{
+    font-weight: 19px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .left h1 span{
+    margin: 10px;
+    font-size: 12px;
+    color: rgb(206, 205, 205);
+}
+
+.container .left .btn{
+    background-color: rgb(57, 208, 57);
+    border: none;
+    width: 80%;
+    margin-top: 20px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.container .right{
+    background-color: rgb(19, 146, 171);
+    width: 50%;
+    padding: 30px;
+    color: white;
+}
+
+.container .right h3{
+    margin-bottom: 10px;
+}
+
+.container .right ul{
+    list-style-type: none;
+    color: rgb(237, 213, 213);
+}
+
+footer{
+    text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        width: 375px;
+    }    
+
+    .container{
+        width: 80%;
+        height: 680px;
+        margin: auto;
+    }
+
+    .container .up{
+        width: 100%;
+        height: 40%;
+    }
+
+    .container .up{
+        padding: 35px 20px;
+        font-size: smaller;
+    }
+
+    .container .left, .container .right{
+        width: 100%;
+        height: 30%;
+    }
+
+    .container .left{
+        font-size: smaller;
+    }
+
+    .container .right{
+        font-size: smaller;
+    }
+}
